@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*child selectors*/
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /*Descendent selectors */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /*Universal selectors */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Pseudo selectors */
+        a:visited{
+            color:yellow;
+        }
+        a:link{
+            color:green;
+        }
+a:active{
+    background-color: brown;
+}
+a:hover{
+    background-color: yellow;
+}
+p:first-child{
+    background-color: aqua;
+}
+    </style>
+</head>
+
+<body>
+    <main class="one">
+       <p>I am first</p> 
+       <p>I am second</p> 
+
+    </main>
+    <div>
+        
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </div>
+<a href="www.google.com">Google</a>
+</body>
+
+</html>
